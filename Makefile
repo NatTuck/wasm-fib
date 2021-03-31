@@ -2,7 +2,7 @@
 BIN := /opt/wasi-sdk/bin
 CC  := $(BIN)/clang
 CFLAGS := -g -O3 -nostartfiles -fvisibility=hidden -Wl,--allow-undefined\
-	-Wl,--no-entry,--import-memory,--import-table,--demangle,--no-entry,--no-threads\
+	-Wl,--no-entry,--import-memory,--import-table,--demangle,--no-entry\
 	-Wl,--export=fib,--export=hello
 
 fib: fib.c
